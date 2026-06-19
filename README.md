@@ -16,7 +16,8 @@ Sebuah aplikasi web interaktif yang dibangun menggunakan Streamlit untuk mempred
 
 
 ### Hasil Prediksi
-<img width="1892" height="925" alt="image" src="https://github.com/user-attachments/assets/21671313-38ed-4a49-9508-fa8e1e322c37" />
+<img width="1866" height="782" alt="image" src="https://github.com/user-attachments/assets/9eaad7c7-098e-4920-be88-9ebcdd9245f8" />
+
 
 
 ---
