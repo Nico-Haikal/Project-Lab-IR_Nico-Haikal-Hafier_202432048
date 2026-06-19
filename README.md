@@ -167,7 +167,7 @@ Kemudian diintegrasikan ke aplikasi Streamlit.
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/student-performance-prediction.git
+git clone https://github.com/Nico-Haikal/student-performance-prediction.git
 
 cd student-performance-prediction
 ```
