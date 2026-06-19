@@ -132,6 +132,10 @@ if st.button("Predict Performance"):
     poor_prob = probability[0] * 100
     good_prob = probability[1] * 100
 
+    # Clamp ke range 0-100 biar aman dari floating point error
+    poor_prob_clamped = max(0, min(100, int(round(poor_prob))))
+    good_prob_clamped = max(0, min(100, int(round(good_prob))))
+
     st.markdown("---")
 
     st.subheader("Prediction Result")
@@ -145,7 +149,7 @@ if st.button("Predict Performance"):
             f"{good_prob:.2f}%"
         )
 
-        st.progress(int(good_prob))
+        st.progress(good_prob_clamped)
 
     else:
 
@@ -156,7 +160,7 @@ if st.button("Predict Performance"):
             f"{poor_prob:.2f}%"
         )
 
-        st.progress(int(poor_prob))
+        st.progress(poor_prob_clamped)
 
     st.markdown("---")
 
@@ -170,7 +174,7 @@ if st.button("Predict Performance"):
         f"📈 Good Performance : {good_prob:.2f}%"
     )
 
-    st.progress(int(good_prob))
+    st.progress(good_prob_clamped)
 
     with st.expander("Debug Information"):
 
